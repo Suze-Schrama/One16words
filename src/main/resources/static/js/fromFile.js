@@ -17,6 +17,7 @@ generateButton.addEventListener("click", async () => {
     });
     if (response.ok){
         hide("malfunction");
+        hide("success");
         show("combinations");
         const combinations = await response.json();
         const ul = byId("combinations");
